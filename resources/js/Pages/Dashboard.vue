@@ -25,13 +25,11 @@
 <script>
     import AppLayout from './../Layouts/AppLayout'
     import Welcome from './../Jetstream/Welcome'
-    import JetNavLink from './../Jetstream/NavLink'
 
     export default {
         components: {
             AppLayout,
-            Welcome,
-            JetNavLink
+            Welcome
         },
     }
 </script>

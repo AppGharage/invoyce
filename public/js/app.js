@@ -3414,7 +3414,6 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Layouts_AppLayout__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./../Layouts/AppLayout */ "./resources/js/Layouts/AppLayout.vue");
 /* harmony import */ var _Jetstream_Welcome__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./../Jetstream/Welcome */ "./resources/js/Jetstream/Welcome.vue");
-/* harmony import */ var _Jetstream_NavLink__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./../Jetstream/NavLink */ "./resources/js/Jetstream/NavLink.vue");
 //
 //
 //
@@ -3439,14 +3438,12 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   components: {
     AppLayout: _Layouts_AppLayout__WEBPACK_IMPORTED_MODULE_0__["default"],
-    Welcome: _Jetstream_Welcome__WEBPACK_IMPORTED_MODULE_1__["default"],
-    JetNavLink: _Jetstream_NavLink__WEBPACK_IMPORTED_MODULE_2__["default"]
+    Welcome: _Jetstream_Welcome__WEBPACK_IMPORTED_MODULE_1__["default"]
   }
 });
 
@@ -3463,6 +3460,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Layouts_AppLayout__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./../../Layouts/AppLayout */ "./resources/js/Layouts/AppLayout.vue");
 /* harmony import */ var _Jetstream_SectionBorder__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./../../Jetstream/SectionBorder */ "./resources/js/Jetstream/SectionBorder.vue");
+/* harmony import */ var _Jetstream_Input__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./../../Jetstream/Input */ "./resources/js/Jetstream/Input.vue");
 //
 //
 //
@@ -3474,13 +3472,34 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
- // import CreateTeamForm from './../../Jetstream/FormSection'
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   components: {
     AppLayout: _Layouts_AppLayout__WEBPACK_IMPORTED_MODULE_0__["default"],
-    JetSectionBorder: _Jetstream_SectionBorder__WEBPACK_IMPORTED_MODULE_1__["default"]
+    JetSectionBorder: _Jetstream_SectionBorder__WEBPACK_IMPORTED_MODULE_1__["default"],
+    JetInput: _Jetstream_Input__WEBPACK_IMPORTED_MODULE_2__["default"]
+  },
+  data: function data() {
+    return {
+      form: this.$inertia.form({
+        name: ''
+      })
+    };
   }
 });
 
@@ -27267,25 +27286,85 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("app-layout", {
-    scopedSlots: _vm._u([
-      {
-        key: "header",
-        fn: function() {
-          return [
-            _c(
-              "h2",
-              {
-                staticClass: "font-semibold text-xl text-gray-800 leading-tight"
-              },
-              [_vm._v("\n            Create Invoice\n        ")]
-            )
-          ]
-        },
-        proxy: true
-      }
-    ])
-  })
+  return _c(
+    "app-layout",
+    {
+      scopedSlots: _vm._u([
+        {
+          key: "header",
+          fn: function() {
+            return [
+              _c(
+                "h2",
+                {
+                  staticClass:
+                    "font-semibold text-xl text-gray-800 leading-tight"
+                },
+                [_vm._v("\n            Create Invoice\n        ")]
+              )
+            ]
+          },
+          proxy: true
+        }
+      ])
+    },
+    [
+      _vm._v(" "),
+      [
+        _c("div", { staticClass: "container mx-auto grid grid-cols-2" }, [
+          _c(
+            "div",
+            {
+              staticClass:
+                "shadow overflow-hidden sm:rounded-md bg-white py-5 mt-4"
+            },
+            [
+              _c("form", { attrs: { action: "" } }, [
+                _c(
+                  "div",
+                  { staticClass: "max-w-7xl mx-auto py-4 sm:px-6 lg:px-8" },
+                  [
+                    _c("jet-input", {
+                      staticClass: "mt-1 block w-full",
+                      attrs: { id: "name", type: "text", autofocus: "" },
+                      model: {
+                        value: _vm.form.name,
+                        callback: function($$v) {
+                          _vm.$set(_vm.form, "name", $$v)
+                        },
+                        expression: "form.name"
+                      }
+                    })
+                  ],
+                  1
+                ),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  { staticClass: "max-w-7xl mx-auto py-4 sm:px-6 lg:px-8" },
+                  [
+                    _c("jet-input", {
+                      staticClass: "mt-1 block w-full",
+                      attrs: { id: "name", type: "text", autofocus: "" },
+                      model: {
+                        value: _vm.form.name,
+                        callback: function($$v) {
+                          _vm.$set(_vm.form, "name", $$v)
+                        },
+                        expression: "form.name"
+                      }
+                    })
+                  ],
+                  1
+                )
+              ])
+            ]
+          )
+        ])
+      ]
+    ],
+    2
+  )
 }
 var staticRenderFns = []
 render._withStripped = true
