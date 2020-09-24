@@ -1,6 +1,6 @@
 ## About Invoyce
 
-Invoyce is a web application that enables a user create and manage an invoice. Some features are:
+Invoyce is an auto-generated invoice web application to help user's accounting efforts. Some features are:
 
 - Simple and fast to create an invoice
 - Create recurring invoices which gets sent automatically within a period

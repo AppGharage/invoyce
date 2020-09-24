@@ -4,6 +4,9 @@ namespace App\Http\Controllers;
 
 use App\Models\Invoice;
 use Illuminate\Http\Request;
+use Inertia\Inertia;
+use Laravel\Jetstream\Jetstream;
+
 
 class InvoiceController extends Controller
 {
@@ -14,7 +17,7 @@ class InvoiceController extends Controller
      */
     public function index()
     {
-        //
+        return Inertia::render('Invoices/Create');
     }
 
     /**
@@ -22,9 +25,9 @@ class InvoiceController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
+    public function create(Request $request)
     {
-        //
+        return Jetstream::inertia()->render($request, 'Invoices/Create');
     }
 
     /**

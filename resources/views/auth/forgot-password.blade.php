@@ -29,6 +29,8 @@
                     {{ __('Email Password Reset Link') }}
                 </x-jet-button>
             </div>
-        </form>
+        </form>00000000
+
+        
     </x-jet-authentication-card>
 </x-guest-layout>

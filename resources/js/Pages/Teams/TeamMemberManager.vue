@@ -36,6 +36,7 @@
                             <div class="px-4 py-3"
                                             :class="{'border-t border-gray-200': i > 0}"
                                             @click="addTeamMemberForm.role = role.key"
+                                            :key="role.key"
                                             v-for="(role, i) in availableRoles">
                                 <div :class="{'opacity-50': addTeamMemberForm.role && addTeamMemberForm.role != role.key}">
                                     <!-- Role Name -->
