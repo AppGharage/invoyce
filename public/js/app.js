@@ -2476,6 +2476,31 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/Jetstream/InputDropdown.vue?vue&type=script&lang=js&":
+/*!***********************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/Jetstream/InputDropdown.vue?vue&type=script&lang=js& ***!
+  \***********************************************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+//
+//
+//
+//
+//
+/* harmony default export */ __webpack_exports__["default"] = ({
+  props: ['value'],
+  methods: {
+    focus: function focus() {
+      this.$refs.input.focus();
+    }
+  }
+});
+
+/***/ }),
+
 /***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/Jetstream/InputError.vue?vue&type=script&lang=js&":
 /*!********************************************************************************************************************************************************************!*\
   !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/Jetstream/InputError.vue?vue&type=script&lang=js& ***!
@@ -3414,7 +3439,6 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Layouts_AppLayout__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./../Layouts/AppLayout */ "./resources/js/Layouts/AppLayout.vue");
 /* harmony import */ var _Jetstream_Welcome__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./../Jetstream/Welcome */ "./resources/js/Jetstream/Welcome.vue");
-/* harmony import */ var _Jetstream_NavLink__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./../Jetstream/NavLink */ "./resources/js/Jetstream/NavLink.vue");
 //
 //
 //
@@ -3439,14 +3463,12 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   components: {
     AppLayout: _Layouts_AppLayout__WEBPACK_IMPORTED_MODULE_0__["default"],
-    Welcome: _Jetstream_Welcome__WEBPACK_IMPORTED_MODULE_1__["default"],
-    JetNavLink: _Jetstream_NavLink__WEBPACK_IMPORTED_MODULE_2__["default"]
+    Welcome: _Jetstream_Welcome__WEBPACK_IMPORTED_MODULE_1__["default"]
   }
 });
 
@@ -3463,6 +3485,10 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Layouts_AppLayout__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./../../Layouts/AppLayout */ "./resources/js/Layouts/AppLayout.vue");
 /* harmony import */ var _Jetstream_SectionBorder__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./../../Jetstream/SectionBorder */ "./resources/js/Jetstream/SectionBorder.vue");
+/* harmony import */ var _Jetstream_Input__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./../../Jetstream/Input */ "./resources/js/Jetstream/Input.vue");
+/* harmony import */ var _Jetstream_InputDropdown__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./../../Jetstream/InputDropdown */ "./resources/js/Jetstream/InputDropdown.vue");
+/* harmony import */ var _Jetstream_Button__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./../../Jetstream/Button */ "./resources/js/Jetstream/Button.vue");
+/* harmony import */ var _Jetstream_Label__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./../../Jetstream/Label */ "./resources/js/Jetstream/Label.vue");
 //
 //
 //
@@ -3474,13 +3500,83 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
- // import CreateTeamForm from './../../Jetstream/FormSection'
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+
+
+
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   components: {
     AppLayout: _Layouts_AppLayout__WEBPACK_IMPORTED_MODULE_0__["default"],
-    JetSectionBorder: _Jetstream_SectionBorder__WEBPACK_IMPORTED_MODULE_1__["default"]
+    JetSectionBorder: _Jetstream_SectionBorder__WEBPACK_IMPORTED_MODULE_1__["default"],
+    JetInput: _Jetstream_Input__WEBPACK_IMPORTED_MODULE_2__["default"],
+    JetInputDropdown: _Jetstream_InputDropdown__WEBPACK_IMPORTED_MODULE_3__["default"],
+    JetButton: _Jetstream_Button__WEBPACK_IMPORTED_MODULE_4__["default"],
+    JetLabel: _Jetstream_Label__WEBPACK_IMPORTED_MODULE_5__["default"]
+  },
+  data: function data() {
+    return {
+      form: this.$inertia.form({
+        recipient: '',
+        amount: '',
+        due_date: '',
+        invoice_type: '',
+        description: ''
+      })
+    };
   }
 });
 
@@ -25139,6 +25235,39 @@ render._withStripped = true
 
 /***/ }),
 
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/Jetstream/InputDropdown.vue?vue&type=template&id=ac260612&":
+/*!***************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/Jetstream/InputDropdown.vue?vue&type=template&id=ac260612& ***!
+  \***************************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("input", {
+    ref: "input",
+    staticClass: "form-input rounded-md shadow-sm",
+    domProps: { value: _vm.value },
+    on: {
+      input: function($event) {
+        return _vm.$emit("input", $event.target.value)
+      }
+    }
+  })
+}
+var staticRenderFns = []
+render._withStripped = true
+
+
+
+/***/ }),
+
 /***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/Jetstream/InputError.vue?vue&type=template&id=045826dc&":
 /*!************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/Jetstream/InputError.vue?vue&type=template&id=045826dc& ***!
@@ -27267,25 +27396,348 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("app-layout", {
-    scopedSlots: _vm._u([
-      {
-        key: "header",
-        fn: function() {
-          return [
+  return _c(
+    "app-layout",
+    {
+      scopedSlots: _vm._u([
+        {
+          key: "header",
+          fn: function() {
+            return [
+              _c(
+                "h2",
+                {
+                  staticClass:
+                    "font-semibold text-xl text-gray-800 leading-tight"
+                },
+                [_vm._v("\n            Create Invoice\n        ")]
+              )
+            ]
+          },
+          proxy: true
+        }
+      ])
+    },
+    [
+      _vm._v(" "),
+      [
+        _c(
+          "div",
+          {
+            staticClass:
+              "max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-2"
+          },
+          [
             _c(
-              "h2",
+              "div",
               {
-                staticClass: "font-semibold text-xl text-gray-800 leading-tight"
+                staticClass:
+                  "shadow overflow-hidden sm:rounded-md bg-white py-5 mt-4"
               },
-              [_vm._v("\n            Create Invoice\n        ")]
+              [
+                _c("form", { attrs: { action: "" } }, [
+                  _c(
+                    "div",
+                    { staticClass: "max-w-7xl mx-auto py-4 sm:px-6 lg:px-8" },
+                    [
+                      _c("jet-label", {
+                        attrs: { for: "name", value: "Recipient" }
+                      }),
+                      _vm._v(" "),
+                      _c("jet-input", {
+                        staticClass: "mt-1 block w-full",
+                        attrs: { id: "recipient", type: "text", autofocus: "" },
+                        model: {
+                          value: _vm.form.recipient,
+                          callback: function($$v) {
+                            _vm.$set(_vm.form, "recipient", $$v)
+                          },
+                          expression: "form.recipient"
+                        }
+                      })
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    { staticClass: "max-w-7xl mx-auto py-4 sm:px-6 lg:px-8" },
+                    [
+                      _c("jet-label", {
+                        attrs: { for: "amount", value: "Amount" }
+                      }),
+                      _vm._v(" "),
+                      _c("jet-input", {
+                        staticClass: "mt-1 block w-full",
+                        attrs: { id: "amount", type: "number", autofocus: "" },
+                        model: {
+                          value: _vm.form.amount,
+                          callback: function($$v) {
+                            _vm.$set(_vm.form, "amount", $$v)
+                          },
+                          expression: "form.amount"
+                        }
+                      })
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    { staticClass: "max-w-7xl mx-auto py-4 sm:px-6 lg:px-8" },
+                    [
+                      _c("jet-label", {
+                        attrs: { for: "due_date", value: "Due Date" }
+                      }),
+                      _vm._v(" "),
+                      _c("jet-input", {
+                        staticClass: "mt-1 block w-full",
+                        attrs: { id: "due_date", type: "text", autofocus: "" },
+                        model: {
+                          value: _vm.form.due_date,
+                          callback: function($$v) {
+                            _vm.$set(_vm.form, "due_date", $$v)
+                          },
+                          expression: "form.due_date"
+                        }
+                      })
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "flex-shrink py-4 w-full inline-block relative max-w-7xl mx-auto px-8"
+                    },
+                    [
+                      _c("jet-label", {
+                        attrs: { for: "invoice_type", value: "Invoice Type" }
+                      }),
+                      _vm._v(" "),
+                      _c(
+                        "select",
+                        {
+                          directives: [
+                            {
+                              name: "model",
+                              rawName: "v-model",
+                              value: _vm.form.invoice_type,
+                              expression: "form.invoice_type"
+                            }
+                          ],
+                          staticClass:
+                            "block appearance-none text-gray-600 w-full form-input rounded-md shadow-sm px-4 py-2 pr-8",
+                          attrs: { name: "invoice_type" },
+                          on: {
+                            change: function($event) {
+                              var $$selectedVal = Array.prototype.filter
+                                .call($event.target.options, function(o) {
+                                  return o.selected
+                                })
+                                .map(function(o) {
+                                  var val = "_value" in o ? o._value : o.value
+                                  return val
+                                })
+                              _vm.$set(
+                                _vm.form,
+                                "invoice_type",
+                                $event.target.multiple
+                                  ? $$selectedVal
+                                  : $$selectedVal[0]
+                              )
+                            }
+                          }
+                        },
+                        [
+                          _c("option", [_vm._v("choose invoice type")]),
+                          _vm._v(" "),
+                          _c("option", { attrs: { value: "one-time" } }, [
+                            _vm._v("One Time")
+                          ]),
+                          _vm._v(" "),
+                          _c("option", { attrs: { value: "recurring" } }, [
+                            _vm._v("Recurring")
+                          ])
+                        ]
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "div",
+                        {
+                          staticClass:
+                            "pointer-events-none absolute top-0 mt-3 mx-auto px-12 right-0 py-9 flex items-center text-gray-600"
+                        },
+                        [
+                          _c(
+                            "svg",
+                            {
+                              staticClass: "fill-current h-4 w-4",
+                              attrs: {
+                                xmlns: "http://www.w3.org/2000/svg",
+                                viewBox: "0 0 20 20"
+                              }
+                            },
+                            [
+                              _c("path", {
+                                attrs: {
+                                  d:
+                                    "M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"
+                                }
+                              })
+                            ]
+                          )
+                        ]
+                      )
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _vm.form.invoice_type == "recurring"
+                    ? _c(
+                        "div",
+                        {
+                          staticClass:
+                            "flex-shrink py-4 w-full inline-block relative max-w-7xl mx-auto px-8"
+                        },
+                        [
+                          _c("jet-label", {
+                            attrs: { for: "duration", value: "Duration" }
+                          }),
+                          _vm._v(" "),
+                          _c(
+                            "select",
+                            {
+                              directives: [
+                                {
+                                  name: "model",
+                                  rawName: "v-model",
+                                  value: _vm.form.invoice_type,
+                                  expression: "form.invoice_type"
+                                }
+                              ],
+                              staticClass:
+                                "block appearance-none text-gray-600 w-full form-input rounded-md shadow-sm px-4 py-2 pr-8",
+                              attrs: { name: "invoice_type" },
+                              on: {
+                                change: function($event) {
+                                  var $$selectedVal = Array.prototype.filter
+                                    .call($event.target.options, function(o) {
+                                      return o.selected
+                                    })
+                                    .map(function(o) {
+                                      var val =
+                                        "_value" in o ? o._value : o.value
+                                      return val
+                                    })
+                                  _vm.$set(
+                                    _vm.form,
+                                    "invoice_type",
+                                    $event.target.multiple
+                                      ? $$selectedVal
+                                      : $$selectedVal[0]
+                                  )
+                                }
+                              }
+                            },
+                            [
+                              _c("option", [_vm._v("choose duration")]),
+                              _vm._v(" "),
+                              _c("option", { attrs: { value: "weekly" } }, [
+                                _vm._v("Weekly")
+                              ]),
+                              _vm._v(" "),
+                              _c("option", { attrs: { value: "by-weekly" } }, [
+                                _vm._v("By-weekly")
+                              ]),
+                              _vm._v(" "),
+                              _c("option", { attrs: { value: "monthly" } }, [
+                                _vm._v("Monthly")
+                              ])
+                            ]
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "div",
+                            {
+                              staticClass:
+                                "pointer-events-none absolute top-0 mt-3 mx-auto px-12 right-0 py-9 flex items-center text-gray-600"
+                            },
+                            [
+                              _c(
+                                "svg",
+                                {
+                                  staticClass: "fill-current h-4 w-4",
+                                  attrs: {
+                                    xmlns: "http://www.w3.org/2000/svg",
+                                    viewBox: "0 0 20 20"
+                                  }
+                                },
+                                [
+                                  _c("path", {
+                                    attrs: {
+                                      d:
+                                        "M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"
+                                    }
+                                  })
+                                ]
+                              )
+                            ]
+                          )
+                        ],
+                        1
+                      )
+                    : _vm._e(),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    { staticClass: "max-w-7xl mx-auto py-4 sm:px-6 lg:px-8" },
+                    [
+                      _c("jet-label", {
+                        attrs: { for: "description", value: "Description" }
+                      }),
+                      _vm._v(" "),
+                      _c("jet-input", {
+                        staticClass: "mt-1 block w-full",
+                        attrs: {
+                          id: "description",
+                          type: "text",
+                          autofocus: ""
+                        },
+                        model: {
+                          value: _vm.form.description,
+                          callback: function($$v) {
+                            _vm.$set(_vm.form, "description", $$v)
+                          },
+                          expression: "form.description"
+                        }
+                      })
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    { staticClass: "max-w-7xl mx-auto py-4 sm:px-6 lg:px-8" },
+                    [
+                      _c("jet-button", { attrs: { type: "submit" } }, [
+                        _vm._v(
+                          "\n                            Create Invoice\n                        "
+                        )
+                      ])
+                    ],
+                    1
+                  )
+                ])
+              ]
             )
           ]
-        },
-        proxy: true
-      }
-    ])
-  })
+        )
+      ]
+    ],
+    2
+  )
 }
 var staticRenderFns = []
 render._withStripped = true
@@ -29288,6 +29740,7 @@ var render = function() {
                               return _c(
                                 "div",
                                 {
+                                  key: user.id,
                                   staticClass:
                                     "flex items-center justify-between"
                                 },
@@ -29413,7 +29866,7 @@ var render = function() {
                   ],
                   null,
                   false,
-                  593815962
+                  3127223497
                 )
               })
             ],
@@ -29452,6 +29905,7 @@ var render = function() {
                           return _c(
                             "div",
                             {
+                              key: role.key,
                               staticClass: "px-4 py-3",
                               class: { "border-t border-gray-200": i > 0 },
                               on: {
@@ -42897,6 +43351,75 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Input_vue_vue_type_template_id_49616346___WEBPACK_IMPORTED_MODULE_0__["render"]; });
 
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Input_vue_vue_type_template_id_49616346___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
+
+/***/ }),
+
+/***/ "./resources/js/Jetstream/InputDropdown.vue":
+/*!**************************************************!*\
+  !*** ./resources/js/Jetstream/InputDropdown.vue ***!
+  \**************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _InputDropdown_vue_vue_type_template_id_ac260612___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./InputDropdown.vue?vue&type=template&id=ac260612& */ "./resources/js/Jetstream/InputDropdown.vue?vue&type=template&id=ac260612&");
+/* harmony import */ var _InputDropdown_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./InputDropdown.vue?vue&type=script&lang=js& */ "./resources/js/Jetstream/InputDropdown.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+/* normalize component */
+
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  _InputDropdown_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _InputDropdown_vue_vue_type_template_id_ac260612___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _InputDropdown_vue_vue_type_template_id_ac260612___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/Jetstream/InputDropdown.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./resources/js/Jetstream/InputDropdown.vue?vue&type=script&lang=js&":
+/*!***************************************************************************!*\
+  !*** ./resources/js/Jetstream/InputDropdown.vue?vue&type=script&lang=js& ***!
+  \***************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_InputDropdown_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib??ref--4-0!../../../node_modules/vue-loader/lib??vue-loader-options!./InputDropdown.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/Jetstream/InputDropdown.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_InputDropdown_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./resources/js/Jetstream/InputDropdown.vue?vue&type=template&id=ac260612&":
+/*!*********************************************************************************!*\
+  !*** ./resources/js/Jetstream/InputDropdown.vue?vue&type=template&id=ac260612& ***!
+  \*********************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_InputDropdown_vue_vue_type_template_id_ac260612___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib??vue-loader-options!./InputDropdown.vue?vue&type=template&id=ac260612& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/Jetstream/InputDropdown.vue?vue&type=template&id=ac260612&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_InputDropdown_vue_vue_type_template_id_ac260612___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_InputDropdown_vue_vue_type_template_id_ac260612___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
 
 
 
