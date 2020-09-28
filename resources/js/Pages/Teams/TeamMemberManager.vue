@@ -86,7 +86,7 @@
                 <!-- Team Member List -->
                 <template #content>
                     <div class="space-y-6">
-                        <div class="flex items-center justify-between" v-for="user in team.users">
+                        <div class="flex items-center justify-between" v-for="user in team.users" :key="user.id">
                             <div class="flex items-center">
                                 <img class="w-8 h-8 rounded-full" :src="user.profile_photo_url" :alt="user.name">
                                 <div class="ml-4">{{ user.name }}</div>
@@ -136,7 +136,7 @@
                         <div class="px-4 py-3"
                                         :class="{'border-t border-gray-200': i > 0}"
                                         @click="updateRoleForm.role = role.key"
-                                        v-for="(role, i) in availableRoles">
+                                        v-for="(role, i) in availableRoles" :key="role.key">
                             <div :class="{'opacity-50': updateRoleForm.role && updateRoleForm.role != role.key}">
                                 <!-- Role Name -->
                                 <div class="flex items-center">
