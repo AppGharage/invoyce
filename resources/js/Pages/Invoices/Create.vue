@@ -19,7 +19,7 @@
                         </div>
                         <div class="max-w-7xl mx-auto py-4 sm:px-6 lg:px-8">
                             <jet-label for="due_date" value="Due Date"/>
-                            <jet-input id="due_date" type="text" class="mt-1 block w-full" v-model="form.due_date" autofocus />
+                            <jet-input id="due_date" type="date" class="mt-1 block w-full" v-model="form.due_date" autofocus />
                         </div>
                         <div class="flex-shrink py-4 w-full inline-block relative max-w-7xl mx-auto px-8">
                             <jet-label for="invoice_type" value="Invoice Type"/>
@@ -34,7 +34,7 @@
                         </div>
                         <div class="flex-shrink py-4 w-full inline-block relative max-w-7xl mx-auto px-8" v-if="form.invoice_type == 'recurring'">
                             <jet-label for="duration" value="Duration"/>
-                            <select class="block appearance-none text-gray-600 w-full form-input rounded-md shadow-sm px-4 py-2 pr-8" name="invoice_type" v-model="form.invoice_type">
+                            <select class="block appearance-none text-gray-600 w-full form-input rounded-md shadow-sm px-4 py-2 pr-8" name="duration" v-model="form.invoice_duration">
                                 <option>choose duration</option>
                                 <option value="weekly">Weekly</option>
                                 <option value="by-weekly">By-weekly</option>
@@ -82,11 +82,15 @@
         data() {
             return {
                 form: this.$inertia.form({
+                    '_method': 'POST',
                     recipient: '',
                     amount:'',
                     due_date: '',
                     invoice_type:'',
                     description: ''
+                }, {
+                    bag: 'createInvoice',
+                    resetOnSuccess: true,
                 })
             }
         },

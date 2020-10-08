@@ -22,7 +22,8 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return Inertia\Inertia::render('Dashboard');
 })->name('dashboard');
 
-Route::get('create-invoice', [InvoiceController::class, 'create'])->name('create');
+Route::get('/create-invoice', [InvoiceController::class, 'create'])->name('create');
+Route::post('/task', [InvoiceController::class, 'store']);
 // Route::get('create-invoice', function () {
 //     return 'Hello World';
 // });

@@ -3570,11 +3570,15 @@ __webpack_require__.r(__webpack_exports__);
   data: function data() {
     return {
       form: this.$inertia.form({
+        '_method': 'POST',
         recipient: '',
         amount: '',
         due_date: '',
         invoice_type: '',
         description: ''
+      }, {
+        bag: 'createInvoice',
+        resetOnSuccess: true
       })
     };
   }
@@ -27492,7 +27496,7 @@ var render = function() {
                       _vm._v(" "),
                       _c("jet-input", {
                         staticClass: "mt-1 block w-full",
-                        attrs: { id: "due_date", type: "text", autofocus: "" },
+                        attrs: { id: "due_date", type: "date", autofocus: "" },
                         model: {
                           value: _vm.form.due_date,
                           callback: function($$v) {
@@ -27613,13 +27617,13 @@ var render = function() {
                                 {
                                   name: "model",
                                   rawName: "v-model",
-                                  value: _vm.form.invoice_type,
-                                  expression: "form.invoice_type"
+                                  value: _vm.form.invoice_duration,
+                                  expression: "form.invoice_duration"
                                 }
                               ],
                               staticClass:
                                 "block appearance-none text-gray-600 w-full form-input rounded-md shadow-sm px-4 py-2 pr-8",
-                              attrs: { name: "invoice_type" },
+                              attrs: { name: "duration" },
                               on: {
                                 change: function($event) {
                                   var $$selectedVal = Array.prototype.filter
@@ -27633,7 +27637,7 @@ var render = function() {
                                     })
                                   _vm.$set(
                                     _vm.form,
-                                    "invoice_type",
+                                    "invoice_duration",
                                     $event.target.multiple
                                       ? $$selectedVal
                                       : $$selectedVal[0]

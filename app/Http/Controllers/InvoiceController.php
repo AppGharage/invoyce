@@ -3,9 +3,11 @@
 namespace App\Http\Controllers;
 
 use App\Models\Invoice;
-use Illuminate\Http\Request;
 use Inertia\Inertia;
 use Laravel\Jetstream\Jetstream;
+use Illuminate\Support\Facades\Redirect;
+use Illuminate\Support\Facades\Request;
+use Illuminate\Support\Facades\Auth;
 
 
 class InvoiceController extends Controller
@@ -24,9 +26,9 @@ class InvoiceController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create(Request $request)
+    public function create()
     {
-        return Jetstream::inertia()->render($request, 'Invoices/Create');
+        return Inertia::render('Invoices/Create');
     }
 
     /**
@@ -35,9 +37,31 @@ class InvoiceController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store()
     {
-        //
+        Auth::user()->account->organizations()->create(
+            Request::validate([
+                'recipient' => 'required',
+                'amount' => 'required',
+                'due_date' => 'required',
+                'invoice_type' => 'required',
+                'description' => 'required'
+            ])
+        );
+        return Redirect::route('dashboard')->with('success', 'Organization created.');
+
+        // $this->validate($request, [
+        //     'recipient' => 'required',
+        //     'amount' => 'required',
+        //     'due_date' => 'required',
+        //     'invoice_type' => 'required',
+        //     'description' => 'required'
+        // ]);
+        // $invoice = new Invoice();
+        // $task->description = $request->description;
+        // $task->user_id = auth()->user()->id;
+        // $task->save();
+        // return redirect('/dashboard');
     }
 
     /**
